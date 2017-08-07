@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC1PKNs7ifneJGXEib55zvkMHc93JD4r4E",
+      authDomain: "authtest-54513.firebaseapp.com",
+      databaseURL: "https://authtest-54513.firebaseio.com",
+      projectId: "authtest-54513",
+      storageBucket: "authtest-54513.appspot.com",
+      messagingSenderId: "1081226378409"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+  </script>
+</head>
+
+<body>
+  <main>
+
+   <section id="login">
+   <h1> Log in</h1>
+
+              <!-- begin sign up form -->
+              <div class="signinform" id="loginform">
+                  <input id="txtEmail" type="email" placeholder="Email">
+
+                  <input id="txtPassword" type="password" placeholder="Password">
+
+                  <button id="btnLogin" class="loginbtn hide"> Log in </button>
+
+                  <button id="resetpwd" class="pwdreset hide"> Forgot password </button>
+
+                  <button id="btnLogout" class="logoutbtn hide"> Log out </button>
+
+                  <p> Don't have an account? <a href="signup"><button id="btnSignUp" class="signupbtn hide">Sign Up
+              </button></a> </p> 
+
+              </div> 
+    </section>
+
+  <!-- listings populate here --> 
+
+   <section id="showcards">
+     <!-- Modal 
+     <input id='modalbtn' type='checkbox'>
+    <label for='modalbtn'></label>
+    <div class='modal'>
+       <div class='content'></div>  
+    </div>
+   -->
+  </section>
+
+  </main>
+</body>
+</html>
+
+<!-- credit: https://codepen.io/SMLMRKHLMS/pen/rVYRLQ -->
+
+<!--  resources
+https://ux.stackexchange.com/questions/105457/use-autocomplete-or-modal-to-display-results-from-firebase-database 
+
+CSS lightbox: https://webdesign.tutsplus.com/articles/super-simple-lightbox-with-css-and-jquery--webdesign-3528
+
+jquery: https://api.jquery.com/category/manipulation/
+-->
